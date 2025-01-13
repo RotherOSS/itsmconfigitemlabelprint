@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-22 04:13+0200\n"
-"PO-Revision-Date: 2025-01-13 11:21+0000\n"
+"PO-Revision-Date: 2025-01-13 15:21+0000\n"
 "Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/"
 "manual-itsmconfigitemlabelprint/master/de/>\n"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
-msgstr ""
+msgstr "Drittanbieter-Software"
 
 #: ../../content/index.rst:35
 msgid "\\-"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../content/index.rst:42
 msgid "Setup"
-msgstr ""
+msgstr "Einrichtung"
 
 #: ../../content/index.rst:43
 msgid ""
@@ -242,7 +242,7 @@ msgstr ""
 
 #: ../../content/index.rst:92
 msgid "Configuration Reference"
-msgstr ""
+msgstr "Konfigurationsreferenz"
 
 #: ../../content/index.rst:95
 msgid "Frontend::Agent::ITSMConfigItem::MenuModule"
