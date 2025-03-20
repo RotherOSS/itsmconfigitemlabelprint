@@ -311,7 +311,7 @@ sub _PDFOutputGeneralInfos {
         # create link in case of QR code
         if ( $Self->{Config}{BarcodeSetting}{Code} eq 'qr' ) {
 
-            if ( $Self->{Config}{BarcodeSetting}{QRCodeLink} =~ /ITSMConfigItemZoom$/ ) {
+            if ( $Self->{Config}{BarcodeSetting}{QRCodeLink} eq 'AgentITSMConfigItemZoom' ) {
 
                 # get link parts
                 my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
@@ -319,6 +319,15 @@ sub _PDFOutputGeneralInfos {
                 my $FQDN         = $ConfigObject->Get('FQDN');
 
                 $Data = "$HTTPType://$FQDN/otobo/index.pl?Action=$Self->{Config}{BarcodeSetting}{QRCodeLink};ConfigItemID=$Param{ConfigItem}{ConfigItemID}";
+            }   
+            elsif ( $Self->{Config}{BarcodeSetting}{QRCodeLink} eq 'CustomerITSMConfigItemZoom' ) {
+
+                # get link parts
+                my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+                my $HTTPType     = $ConfigObject->Get('HttpType');
+                my $FQDN         = $ConfigObject->Get('FQDN');
+
+                $Data = "$HTTPType://$FQDN/otobo/customer.pl?Action=$Self->{Config}{BarcodeSetting}{QRCodeLink};ConfigItemID=$Param{ConfigItem}{ConfigItemID}";
             }
             elsif ( $Self->{Config}{BarcodeSetting}{QRCodeLink} eq 'Custom' ) {
                 $Data = $Kernel::OM->Get('Kernel::Output::HTML::Layout')->Output(

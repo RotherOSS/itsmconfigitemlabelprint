@@ -114,7 +114,8 @@
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting" Required="0" Valid="1">
-        <Description Translatable="1">Used footer settings for the label. Template::Toolkit is supported, thus config item data can be used like "Number: [% Data.Number %]".</Description>
+        <Description Translatable="1">Used footer settings for the label. Template::Toolkit is supported, thus config item data can be used like "Number: [% Data.Number %] (For ConfigItem DynamicFields with a namespace, please use the following syntax:
+[% DFName = 'DynamicField_DynFieldName' %][% Data.$DFName %] )".</Description>
         <Navigation>Frontend::Agent::View::AgentITSMConfigItemLabelPrint</Navigation>
         <Value>
             <Hash>
@@ -130,7 +131,8 @@
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text" Required="0" Valid="1">
-        <Description Translatable="1">Define several lines (one entry per line) to be printed as label content. Template::Toolkit is supported, thus config item data can be used like "Number: [% Data.Number %]".</Description>
+        <Description Translatable="1">Define several lines (one entry per line) to be printed as label content. Template::Toolkit is supported, thus config item data can be used like "Number: [% Data.Number %] (For ConfigItem DynamicFields with a namespace, please use the following syntax:
+[% DFName = 'DynamicField_DynFieldName' %][% Data.$DFName %] )".</Description>
         <Navigation>Frontend::Agent::View::AgentITSMConfigItemLabelPrint</Navigation>
         <Value>
             <Array>
