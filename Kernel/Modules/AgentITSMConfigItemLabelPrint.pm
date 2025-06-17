@@ -291,8 +291,8 @@ sub _PDFOutputGeneralInfos {
         );
 
         $PDFObject->HLine(
-            Color     => $Self->{Config}->{HLineSetting}->{Color},        # (optional) default black
-            LineWidth => $Self->{Config}->{HLineSetting}->{LineWidth},    # (optional) default 1
+            Color     => $Self->{Config}{HLineSetting}{Color},        # (optional) default black
+            LineWidth => $Self->{Config}{HLineSetting}{LineWidth},    # (optional) default 1
         );
 
     }
@@ -319,7 +319,7 @@ sub _PDFOutputGeneralInfos {
                 my $FQDN         = $ConfigObject->Get('FQDN');
 
                 $Data = "$HTTPType://$FQDN/otobo/index.pl?Action=$Self->{Config}{BarcodeSetting}{QRCodeLink};ConfigItemID=$Param{ConfigItem}{ConfigItemID}";
-            }   
+            }
             elsif ( $Self->{Config}{BarcodeSetting}{QRCodeLink} eq 'CustomerITSMConfigItemZoom' ) {
 
                 # get link parts
@@ -386,11 +386,11 @@ sub _PDFOutputGeneralInfos {
 
         $PDFObject->Text(
             Text     => $FooterText,
-            Font     => $Self->{Config}->{FooterSetting}->{Font},
-            FontSize => $Self->{Config}->{FooterSetting}->{FontSize},
-            Color    => $Self->{Config}->{FooterSetting}->{Color},
-            Align    => $Self->{Config}->{FooterSetting}->{Align},
-            Lead     => $Self->{Config}->{FooterSetting}->{Lead},
+            Font     => $Self->{Config}{FooterSetting}{Font},
+            FontSize => $Self->{Config}{FooterSetting}{FontSize},
+            Color    => $Self->{Config}{FooterSetting}{Color},
+            Align    => $Self->{Config}{FooterSetting}{Align},
+            Lead     => $Self->{Config}{FooterSetting}{Lead},
         );
     }
 
