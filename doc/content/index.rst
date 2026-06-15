@@ -14,11 +14,11 @@ System requirements
 
 Framework
 ---------
-OTOBO 11.0.x
+OTOBO 11.1.x
 
 Packages
 --------
-ITSMConfigurationManagement 11.0.0
+ITSMConfigurationManagement 11.1.0
 
 Third-party software
 --------------------
