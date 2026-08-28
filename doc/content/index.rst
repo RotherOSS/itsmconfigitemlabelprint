@@ -48,7 +48,7 @@ Each of this is only printed if the corresponding system configuration setting i
 
 Logo
 ^^^^
-For the logo, an image file with the logo is needed. It can be placed in every location in the OTOBO directory. Recommended would be a location like `/opt/otobo/var/https/htdocs/skins/Agent/default/img/LogoFile.png`. The location then must be put into the system configuration setting `Kernel/Modules/AgentITSMConfigItemLabelPrint.pm`, key `LogoPath`. The setting holds some other options which can be used to customize the appearance of the logo in the PDF.
+For the logo, an image file with the logo is needed. It can be placed in every location in the OTOBO directory. Recommended would be a location like `/opt/otobo/var/httpd/htdocs/skins/Agent/default/img/LogoFile.png`. The location then must be put into the system configuration setting `Kernel/Modules/AgentITSMConfigItemLabelPrint.pm`, key `LogoPath`. The setting holds some other options which can be used to customize the appearance of the logo in the PDF.
 
 Text
 ^^^^
