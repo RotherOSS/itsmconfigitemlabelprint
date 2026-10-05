@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-22 04:13+0200\n"
-"PO-Revision-Date: 2026-10-05 04:41+0000\n"
+"PO-Revision-Date: 2026-10-05 06:41+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/itsmconfigitemlabelprint-documentation/ja/>\n"
@@ -23,47 +23,47 @@ msgstr ""
 
 #: ../../content/index.rst:16
 msgid "Sacrifice to Sphinx"
-msgstr ""
+msgstr "Sacrifice to Sphinx"
 
 #: ../../content/index.rst:19
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../content/index.rst:20
 msgid "OTOBO::ITSM config item label print including barcode."
-msgstr ""
+msgstr "バーコード付きの OTOBO::ITSM 構成アイテムのラベル印刷。"
 
 #: ../../content/index.rst:23
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../../content/index.rst:26
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../../content/index.rst:27
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../../content/index.rst:30
 msgid "Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../../content/index.rst:31
 msgid "ITSMConfigurationManagement 11.0.0"
-msgstr ""
+msgstr "ITSMConfigurationManagement 11.0.0"
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../../content/index.rst:35
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:38
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../../content/index.rst:39
 msgid ""
@@ -71,10 +71,13 @@ msgid ""
 "customizable labels for assets kept in the CMDB, to be printed via the "
 "Agent interface."
 msgstr ""
+"ITSMConfigItemLabelPrint パッケージを使用すると、CMDB で管理している資産用に"
+"、細かくカスタマイズ可能なラベルを定義して、担当者インタフェースから印刷でき"
+"ます。"
 
 #: ../../content/index.rst:42
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../../content/index.rst:43
 msgid ""
@@ -82,34 +85,45 @@ msgid ""
 "available. The PDF consists of 5 elements (see Picture) and the "
 "respective system configuration:"
 msgstr ""
+"生成される PDF ファイルを必要に応じて調整するために、さまざまなオプションが用"
+"意されています。PDF は5つの要素（図を参照）と、それぞれのシステム設定で構成さ"
+"れます:"
 
 #: ../../content/index.rst:45
 msgid ""
 "Logo "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting`)"
 msgstr ""
+"ロゴ"
+"（`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting`）"
 
 #: ../../content/index.rst:46
 msgid "Text (`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text`)"
-msgstr ""
+msgstr "テキスト（`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text`）"
 
 #: ../../content/index.rst:47
 msgid ""
 "Horizontal Line "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting`)"
 msgstr ""
+"水平線"
+"（`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting`）"
 
 #: ../../content/index.rst:48
 msgid ""
 "Barcode "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting`)"
 msgstr ""
+"バーコード"
+"（`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting`）"
 
 #: ../../content/index.rst:49
 msgid ""
 "Footer "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting`)"
 msgstr ""
+"フッター"
+"（`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting`）"
 
 #: ../../content/index.rst:51
 msgid ""
@@ -117,14 +131,16 @@ msgid ""
 "setting is active. This way, it can be defined which elements are wanted "
 "and which elements are omitted entirely."
 msgstr ""
+"各要素は、対応するシステム設定が有効な場合にのみ印刷されます。これにより、必"
+"要な要素と完全に省略する要素を定義できます。"
 
 #: ../../content/index.rst:57
 msgid "The screenshot shows the elements available."
-msgstr ""
+msgstr "スクリーンショットは、利用可能な要素を示しています。"
 
 #: ../../content/index.rst:60
 msgid "Logo"
-msgstr ""
+msgstr "ロゴ"
 
 #: ../../content/index.rst:61
 msgid ""
@@ -136,10 +152,16 @@ msgid ""
 "setting holds some other options which can be used to customize the "
 "appearance of the logo in the PDF."
 msgstr ""
+"ロゴには、ロゴの画像ファイルが必要です。OTOBO ディレクトリ内のどこにでも配置"
+"できます。推奨される場所は `/opt/otobo/var/https/htdocs/skins/Agent/default/"
+"img/LogoFile.png` のような場所です。その場所を、システム設定 `Kernel/Modules/"
+"AgentITSMConfigItemLabelPrint.pm` のキー `LogoPath` に設定する必要があります"
+"。この設定には、PDF 内のロゴの見た目をカスタマイズするためのその他の"
+"オプションもあります。"
 
 #: ../../content/index.rst:64
 msgid "Text"
-msgstr ""
+msgstr "本文"
 
 #: ../../content/index.rst:65
 msgid ""
@@ -151,6 +173,12 @@ msgid ""
 "can be used to put in data from the configuration item, e.g. like 'Nr.: "
 "[% Data.Number %]', which will produce a result like 'Nr.: 123456789'."
 msgstr ""
+"テキストは表のような構造で、デフォルトでは上部中央から下に向かって印刷されま"
+"す。システム設定 "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text` の配列の各"
+"エントリーが、それぞれ1行として印刷されます。各行では Template::Toolkit 構文"
+"を使用して、構成アイテムのデータを差し込めます。例えば 'Nr.: [% Data.Number "
+"%]' とすると、'Nr.: 123456789' のような結果になります。"
 
 #: ../../content/index.rst:67
 msgid ""
@@ -158,10 +186,13 @@ msgid ""
 "the system configuration setting "
 "`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting`."
 msgstr ""
+"テキストのスタイルと配置のオプションは、システム設定 "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting` で"
+"カスタマイズできます。"
 
 #: ../../content/index.rst:70
 msgid "Horizontal Line"
-msgstr ""
+msgstr "水平線"
 
 #: ../../content/index.rst:71
 msgid ""
@@ -170,10 +201,13 @@ msgid ""
 "`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting`,"
 " also the color and line width can be changed."
 msgstr ""
+"見た目を整えるために、任意の高さに水平線を配置できます。システム設定 "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting` では"
+"、線の色と太さも変更できます。"
 
 #: ../../content/index.rst:74
 msgid "Barcode"
-msgstr ""
+msgstr "バーコード"
 
 #: ../../content/index.rst:75
 msgid ""
@@ -182,34 +216,42 @@ msgid ""
 " can be used to change format and appearance of the barcode. The settings"
 " have the following meaning:"
 msgstr ""
+"システム設定 "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting` を"
+"使用して、バーコードの形式と見た目を変更できます。各設定の意味は次のとおりで"
+"す:"
 
 #: ../../content/index.rst:77
 msgid "BarcodeField: Attribute of the config item used for the barcode."
-msgstr ""
+msgstr "BarcodeField: バーコードに使用する構成アイテムの属性。"
 
 #: ../../content/index.rst:78
 msgid ""
 "Caption: Whether to put the data below the barcode as caption. Ignored "
 "for QR code."
 msgstr ""
+"Caption: データをバーコードの下にキャプションとして表示するかどうか。QR "
+"コードでは無視されます。"
 
 #: ../../content/index.rst:79
 msgid "QRCodeLink: When creating a QR code, set the link destination."
-msgstr ""
+msgstr "QRCodeLink: QR コードを作成する場合のリンク先を設定します。"
 
 #: ../../content/index.rst:80
 msgid ""
 "CustomLink: Define a custom link via Template::Toolkit syntax for QR "
 "codes."
 msgstr ""
+"CustomLink: QR コード用のカスタムリンクを Template::Toolkit 構文で定義します"
+"。"
 
 #: ../../content/index.rst:81
 msgid "Code: Which type of code to print."
-msgstr ""
+msgstr "Code: 印刷するコードの種類。"
 
 #: ../../content/index.rst:82
 msgid "Zone: The base height of the barcode in points."
-msgstr ""
+msgstr "Zone: バーコードの基本の高さ（ポイント）。"
 
 #: ../../content/index.rst:83
 msgid ""
@@ -218,18 +260,21 @@ msgid ""
 "this many points, and printing characters will be shown below their "
 "respective bars. This is enabled by default for EAN-13 barcodes."
 msgstr ""
+"LowerMendingZone: 指定されていて該当する場合、非印字文字（例: スタート文字や"
+"ストップ文字）のバーがこのポイント数だけ下に延長され、印字文字はそれぞれの"
+"バーの下に表示されます。EAN-13 バーコードではデフォルトで有効です。"
 
 #: ../../content/index.rst:84
 msgid "Font: Font to use for the barcode caption."
-msgstr ""
+msgstr "Font: バーコードのキャプションに使用するフォント。"
 
 #: ../../content/index.rst:85
 msgid "FontSize: Font size to use for the barcode caption."
-msgstr ""
+msgstr "FontSize: バーコードのキャプションに使用するフォントサイズ。"
 
 #: ../../content/index.rst:88
 msgid "Footer"
-msgstr ""
+msgstr "フッター"
 
 #: ../../content/index.rst:89
 msgid ""
@@ -239,58 +284,68 @@ msgid ""
 "The key 'FooterText' is capable of interpreting Template::Toolkit syntax "
 "(compare description of the Text section)."
 msgstr ""
+"システム設定 "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting` で"
+"は、フッター部分の位置、見た目、内容を指定できます。キー 'FooterText' では "
+"Template::Toolkit 構文を使用できます（テキストの項の説明を参照）。"
 
 #: ../../content/index.rst:92
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"
 
 #: ../../content/index.rst:95
 msgid "Frontend::Agent::ITSMConfigItem::MenuModule"
-msgstr ""
+msgstr "Frontend::Agent::ITSMConfigItem::MenuModule"
 
 #: ../../content/index.rst:98
 msgid "ITSMConfigItem::Frontend::MenuModule###450-LabelPrint"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###450-LabelPrint"
 
 #: ../../content/index.rst:99
 msgid ""
 "Shows a link in the menu to print a label of the configuration item in "
 "the zoom view of the agent interface."
 msgstr ""
+"担当者インタフェースのズームビューで、構成アイテムのラベルを印刷するための"
+"リンクをメニューに表示します。"
 
 #: ../../content/index.rst:102
 msgid "Frontend::Agent::ITSMConfigItem::Permission"
-msgstr ""
+msgstr "Frontend::Agent::ITSMConfigItem::Permission"
 
 #: ../../content/index.rst:105
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Permission"
 
 #: ../../content/index.rst:106
 msgid ""
 "Required permissions to use the print ITSM configuration item screen in "
 "the agent interface."
 msgstr ""
+"担当者インタフェースで ITSM 構成アイテムの印刷画面を使用するために必要な権限"
+"。"
 
 #: ../../content/index.rst:109
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/index.rst:112
 msgid "Frontend::Module###AgentITSMConfigItemLabelPrint"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemLabelPrint"
 
 #: ../../content/index.rst:113
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../../content/index.rst:116
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/index.rst:119
 msgid "Frontend::Navigation###AgentITSMConfigItemLabelPrint###003-AgentITSMConfigItemLabelPrint"
 msgstr ""
+"Frontend::Navigation###AgentITSMConfigItemLabelPrint###003-"
+"AgentITSMConfigItemLabelPrint"
 
 #: ../../content/index.rst:120
 msgid "Main menu item registration."
@@ -298,11 +353,12 @@ msgstr "メインメニュー項目の登録。"
 
 #: ../../content/index.rst:123
 msgid "Frontend::Agent::View::AgentITSMConfigItemLabelPrint"
-msgstr ""
+msgstr "Frontend::Agent::View::AgentITSMConfigItemLabelPrint"
 
 #: ../../content/index.rst:126
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting"
 msgstr ""
+"ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting"
 
 #: ../../content/index.rst:127
 msgid ""
@@ -319,36 +375,49 @@ msgid ""
 "default for EAN-13 barcodes. - Font: Font to use for the barcode caption."
 " - FontSize: Font size to use for the barcode caption."
 msgstr ""
+"ラベルで使用するバーコードの設定。各オプションの意味は次のとおりです: - "
+"BarcodeField: バーコードに使用する構成アイテムの属性。 - Caption: データを"
+"バーコードの下にキャプションとして表示するかどうか。QR コードでは無視されます"
+"。 - QRCodeLink: QR コードを作成する場合のリンク先を設定します。 - "
+"CustomLink: QR コード用のカスタムリンクを Template::Toolkit 構文で定義します"
+"。 - Code: 印刷するコードの種類。 - Zone: バーコードの基本の高さ（ポイント）"
+"。 - LowerMendingZone: 指定されていて該当する場合、非印字文字（例: スタート文"
+"字やストップ文字）のバーがこのポイント数だけ下に延長され、印字文字はそれぞれ"
+"のバーの下に表示されます。EAN-13 バーコードではデフォルトで有効です。 - "
+"Font: バーコードのキャプションに使用するフォント。 - FontSize: バーコードの"
+"キャプションに使用するフォントサイズ。"
 
 #: ../../content/index.rst:139
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting"
 
 #: ../../content/index.rst:140
 msgid "Used table settings for the label."
-msgstr ""
+msgstr "ラベルで使用する表の設定。"
 
 #: ../../content/index.rst:143
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting"
 
 #: ../../content/index.rst:144
 msgid ""
 "Used logo settings for the label. The best size is 142 x 187 px. Please "
 "use px here."
 msgstr ""
+"ラベルで使用するロゴの設定。最適なサイズは 142 x 187 px です。ここでは px で"
+"指定してください。"
 
 #: ../../content/index.rst:147
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting"
 
 #: ../../content/index.rst:148
 msgid "Used settings for the horizontal line."
-msgstr ""
+msgstr "水平線に使用する設定。"
 
 #: ../../content/index.rst:151
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text"
 
 #: ../../content/index.rst:152
 msgid ""
@@ -356,56 +425,65 @@ msgid ""
 " Template::Toolkit is supported, thus config item data can be used like "
 "\"Number: [% Data.Number %]\"."
 msgstr ""
+"ラベルの内容として印刷する複数の行を定義します（1行につき1エントリー）。"
+"Template::Toolkit に対応しているため、\"Number: [% Data.Number %]\" のように"
+"構成アイテムのデータを使用できます。"
 
 #: ../../content/index.rst:155
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting"
 
 #: ../../content/index.rst:156
 msgid ""
 "Used footer settings for the label. Template::Toolkit is supported, thus "
 "config item data can be used like \"Number: [% Data.Number %]\"."
 msgstr ""
+"ラベルで使用するフッターの設定。Template::Toolkit に対応しているため"
+"、\"Number: [% Data.Number %]\" のように構成アイテムのデータを使用できます。"
 
 #: ../../content/index.rst:159
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###PageSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###PageSetting"
 
 #: ../../content/index.rst:160
 msgid ""
 "Used page size in mm and other page settings. Be carefull if you change "
 "the size, it´s possible that the label is unusable."
 msgstr ""
+"使用するページサイズ（mm）とその他のページ設定。サイズを変更する場合は注意し"
+"てください。ラベルが使用できなくなる可能性があります。"
 
 #: ../../content/index.rst:163
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../../content/index.rst:166
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: ../../content/index.rst:167
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/index.rst:168
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "メール: hello@otobo.io"
 
 #: ../../content/index.rst:169
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.io"
 
 #: ../../content/index.rst:172
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../../content/index.rst:173
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
+"作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-"
+"datestamp|"
 
 #~ msgid "Frontend::AgentITSMConfigItemLabelPrint"
 #~ msgstr ""
