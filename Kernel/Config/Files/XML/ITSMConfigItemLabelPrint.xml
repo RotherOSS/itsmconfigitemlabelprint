@@ -8,7 +8,7 @@
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###PageSetting" Required="1" Valid="1">
-        <Description Translatable="1">Used page size in mm and other page settings. Be carefull if you change the size, it´s possible that the label is unusable.</Description>
+        <Description Translatable="1">Used page size in mm and other page settings. Be careful if you change the size, it is possible that the label is unusable.</Description>
         <Navigation>Frontend::Agent::View::AgentITSMConfigItemLabelPrint</Navigation>
         <Value>
             <Hash>
@@ -71,17 +71,7 @@
         </Value>
     </Setting>
     <Setting Name="ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting" Required="0" Valid="1">
-        <Description Translatable="1">Used barcode settings for the label. Options have the following meaning:
-- BarcodeField: Attribute of the config item used for the barcode.
-- Caption: Whether to put the data below the barcode as caption. Ignored for QR code.
-- QRCodeLink: When creating a QR code, set the link destination.
-- CustomLink: Define a custom link via Template::Toolkit syntax for QR codes.
-- Code: Which type of code to print.
-- Zone: The base height of the barcode in points.
-- LowerMendingZone: If present and applicable, bars for non-printing characters (e.g. start and stop characters) will be extended downward by this many points, and printing characters will be shown below their respective bars. This is enabled by default for EAN-13 barcodes.
-- Font: Font to use for the barcode caption.
-- FontSize: Font size to use for the barcode caption.
-        </Description>
+        <Description Translatable="1">Used barcode settings for the label. “BarcodeField” is the attribute of the config item used for the barcode. “Caption” defines whether to put the data below the barcode as caption. Ignored for QR code. “QRCodeLink” sets the link destination when creating a QR code. “CustomLink” defines a custom link via Template::Toolkit syntax for QR codes. “Code” specifies which type of code to print. “Zone” defines the base height of the barcode in points. If “LowerMendingZone” is present and applicable, bars for non-printing characters (e.g. start and stop characters) will be extended downward by this many points, and printing characters will be shown below their respective bars. This is enabled by default for EAN-13 barcodes. “Font” defines the font to use for the barcode caption. “FontSize” defines the font size to use for the barcode caption.</Description>
         <Navigation>Frontend::Agent::View::AgentITSMConfigItemLabelPrint</Navigation>
         <Value>
             <Hash>
