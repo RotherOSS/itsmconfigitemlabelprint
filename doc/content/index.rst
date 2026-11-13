@@ -42,13 +42,13 @@ Each of this is only printed if the corresponding system configuration setting i
 
 .. figure:: screenshot01.png
    :scale: 70%
-   :alt: The sreenshot shows the elements available. 
+   :alt: The screenshot shows the elements available.
 
    The screenshot shows the elements available.
 
 Logo
 ^^^^
-For the logo, an image file with the logo is needed. It can be placed in every location in the OTOBO directory. Recommended would be a location like `/opt/otobo/var/https/htdocs/skins/Agent/default/img/LogoFile.png`. The location then must be put into the system configuration setting `Kernel/Modules/AgentITSMConfigItemLabelPrint.pm`, key `LogoPath`. The setting holds some other options which can be used to customize the appearance of the logo in the PDF.
+For the logo, an image file with the logo is needed. It can be placed in every location in the OTOBO directory. Recommended would be a location like `/opt/otobo/var/httpd/htdocs/skins/Agent/default/img/LogoFile.png`. The location then must be put into the system configuration setting `ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting`, key `LogoPath`. The setting holds some other options which can be used to customize the appearance of the logo in the PDF.
 
 Text
 ^^^^
@@ -114,16 +114,7 @@ Frontend::Agent::View::AgentITSMConfigItemLabelPrint
 
 ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Used barcode settings for the label. Options have the following meaning:
-- BarcodeField: Attribute of the config item used for the barcode.
-- Caption: Whether to put the data below the barcode as caption. Ignored for QR code.
-- QRCodeLink: When creating a QR code, set the link destination.
-- CustomLink: Define a custom link via Template::Toolkit syntax for QR codes.
-- Code: Which type of code to print.
-- Zone: The base height of the barcode in points.
-- LowerMendingZone: If present and applicable, bars for non-printing characters (e.g. start and stop characters) will be extended downward by this many points, and printing characters will be shown below their respective bars. This is enabled by default for EAN-13 barcodes.
-- Font: Font to use for the barcode caption.
-- FontSize: Font size to use for the barcode caption.
+Used barcode settings for the label. “BarcodeField” is the attribute of the config item used for the barcode. “Caption” defines whether to put the data below the barcode as caption. Ignored for QR code. “QRCodeLink” sets the link destination when creating a QR code. “CustomLink” defines a custom link via Template::Toolkit syntax for QR codes. “Code” specifies which type of code to print. “Zone” defines the base height of the barcode in points. If “LowerMendingZone” is present and applicable, bars for non-printing characters (e.g. start and stop characters) will be extended downward by this many points, and printing characters will be shown below their respective bars. This is enabled by default for EAN-13 barcodes. “Font” defines the font to use for the barcode caption. “FontSize” defines the font size to use for the barcode caption.
 
 ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -147,7 +138,7 @@ Used footer settings for the label. Template::Toolkit is supported, thus config 
 
 ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###PageSetting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Used page size in mm and other page settings. Be carefull if you change the size, it´s possible that the label is unusable.
+Used page size in mm and other page settings. Be careful if you change the size, it is possible that the label is unusable.
 
 About
 =======
