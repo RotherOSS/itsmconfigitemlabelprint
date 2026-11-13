@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-22 04:13+0200\n"
-"PO-Revision-Date: 2026-10-13 14:41+0000\n"
+"PO-Revision-Date: 2026-11-13 13:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/itsmconfigitemlabelprint-documentation/hu/>\n"
@@ -31,7 +31,7 @@ msgstr "Leírás"
 
 #: ../../content/index.rst:20
 msgid "OTOBO::ITSM config item label print including barcode."
-msgstr ""
+msgstr "OTOBO::ITSM konfigurációelem címkéjének nyomtatása vonalkóddal együtt."
 
 #: ../../content/index.rst:23
 msgid "System requirements"
@@ -51,7 +51,7 @@ msgstr "Csomagok"
 
 #: ../../content/index.rst:31
 msgid "ITSMConfigurationManagement 11.0.0"
-msgstr ""
+msgstr "ITSMConfigurationManagement 11.0.0"
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
@@ -71,6 +71,9 @@ msgid ""
 "customizable labels for assets kept in the CMDB, to be printed via the "
 "Agent interface."
 msgstr ""
+"Az ITSMConfigItemLabelPrint csomag rendkívül rugalmasan személyre szabható "
+"címkék meghatározását teszi lehetővé a CMDB-ben tárolt eszközökhöz, "
+"amelyeket az ügyintézői felületén keresztül lehet kinyomtatni."
 
 #: ../../content/index.rst:42
 msgid "Setup"
@@ -82,34 +85,46 @@ msgid ""
 "available. The PDF consists of 5 elements (see Picture) and the "
 "respective system configuration:"
 msgstr ""
+"Az eredményül kapott PDF-fájl igény szerinti alakításához a lehetőségek "
+"széles skálája áll rendelkezésre. A PDF 5 elemből áll (ahogy az ábrán "
+"látható), valamint a hozzájuk tartozó rendszerbeállításokból:"
 
 #: ../../content/index.rst:45
 msgid ""
 "Logo "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting`)"
 msgstr ""
+"Logó "
+"(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting`)"
 
 #: ../../content/index.rst:46
 msgid "Text (`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text`)"
 msgstr ""
+"Szöveg (`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text`)"
 
 #: ../../content/index.rst:47
 msgid ""
 "Horizontal Line "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting`)"
 msgstr ""
+"Vízszintes vonal "
+"(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting`)"
 
 #: ../../content/index.rst:48
 msgid ""
 "Barcode "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting`)"
 msgstr ""
+"Vonalkód "
+"(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting`)"
 
 #: ../../content/index.rst:49
 msgid ""
 "Footer "
 "(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting`)"
 msgstr ""
+"Lábléc "
+"(`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting`)"
 
 #: ../../content/index.rst:51
 msgid ""
@@ -117,14 +132,17 @@ msgid ""
 "setting is active. This way, it can be defined which elements are wanted "
 "and which elements are omitted entirely."
 msgstr ""
+"Ezek mindegyike csak akkor kerül nyomtatásra, ha a megfelelő "
+"rendszerbeállítási lehetőség aktív. Így meg lehet határozni, hogy mely "
+"elemek szükségesek és mely elemek legyenek teljesen kihagyva."
 
 #: ../../content/index.rst:57
 msgid "The screenshot shows the elements available."
-msgstr ""
+msgstr "A képernyőkép az elérhető elemeket jeleníti meg."
 
 #: ../../content/index.rst:60
 msgid "Logo"
-msgstr ""
+msgstr "Logó"
 
 #: ../../content/index.rst:61
 msgid ""
@@ -151,6 +169,14 @@ msgid ""
 "can be used to put in data from the configuration item, e.g. like 'Nr.: "
 "[% Data.Number %]', which will produce a result like 'Nr.: 123456789'."
 msgstr ""
+"A szöveg táblázatszerű szerkezetben lesz kinyomtatva, alapértelmezetten a "
+"felső középső pozíciótól lefelé. Az "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text` "
+"rendszerbeállítási lehetőség tömbjében lévő minden bejegyzés különálló "
+"sorként kerül kinyomtatásra. A sorokon belül a Template::Toolkit szintaxisa "
+"használható a konfigurációelemből származó adatok beszúrásához, mint például "
+"„Sorszám: [% Data.Number %]”, amely a „Sorszám: 123456789” szerű eredményt "
+"fogja előállítani."
 
 #: ../../content/index.rst:67
 msgid ""
@@ -158,10 +184,13 @@ msgid ""
 "the system configuration setting "
 "`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting`."
 msgstr ""
+"A szöveg formázási és elhelyezési lehetőségei az "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting` "
+"rendszerbeállítási lehetőséggel szabható személyre."
 
 #: ../../content/index.rst:70
 msgid "Horizontal Line"
-msgstr ""
+msgstr "Vízszintes vonal"
 
 #: ../../content/index.rst:71
 msgid ""
@@ -170,10 +199,15 @@ msgid ""
 "`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting`,"
 " also the color and line width can be changed."
 msgstr ""
+"Az optikai szerkezethez egy vízszintes vonal helyezhető el személyre "
+"szabható magasságban. Az "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting` "
+"rendszerbeállítási lehetőségben a szín és a vonalvastagság is "
+"megváltoztatható."
 
 #: ../../content/index.rst:74
 msgid "Barcode"
-msgstr ""
+msgstr "Vonalkód"
 
 #: ../../content/index.rst:75
 msgid ""
@@ -182,34 +216,42 @@ msgid ""
 " can be used to change format and appearance of the barcode. The settings"
 " have the following meaning:"
 msgstr ""
+"Az "
+"`ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting` "
+"rendszerbeállítási lehetőség használható a vonalkód formátumának és "
+"megjelenésének megváltoztatásához. A beállítások a következőket jelentik:"
 
 #: ../../content/index.rst:77
 msgid "BarcodeField: Attribute of the config item used for the barcode."
-msgstr ""
+msgstr "BarcodeField: a vonalkódhoz használt konfigurációelem attribútuma."
 
 #: ../../content/index.rst:78
 msgid ""
 "Caption: Whether to put the data below the barcode as caption. Ignored "
 "for QR code."
 msgstr ""
+"Caption: kerüljenek-e az adatok a vonalkód alá feliratként. QR-kódnál "
+"figyelmen kívül lesz hagyva."
 
 #: ../../content/index.rst:79
 msgid "QRCodeLink: When creating a QR code, set the link destination."
-msgstr ""
+msgstr "QRCodeLink: QR-kód létrehozásakor a hivatkozás céljának beállítása."
 
 #: ../../content/index.rst:80
 msgid ""
 "CustomLink: Define a custom link via Template::Toolkit syntax for QR "
 "codes."
 msgstr ""
+"CustomLink: egyéni hivatkozás meghatározása Template::Toolkit szintaxison "
+"keresztül a QR-kódokhoz."
 
 #: ../../content/index.rst:81
 msgid "Code: Which type of code to print."
-msgstr ""
+msgstr "Code: milyen típusú kódot kell kinyomtatni."
 
 #: ../../content/index.rst:82
 msgid "Zone: The base height of the barcode in points."
-msgstr ""
+msgstr "Zone: a vonalkód alapmagassága pontokban."
 
 #: ../../content/index.rst:83
 msgid ""
@@ -218,18 +260,23 @@ msgid ""
 "this many points, and printing characters will be shown below their "
 "respective bars. This is enabled by default for EAN-13 barcodes."
 msgstr ""
+"LowerMendingZone: ha van ilyen és alkalmazható, akkor a nem nyomtatható "
+"karakterek (például kezdő és záró karakterek) vonalai ennyi ponttal lesznek "
+"lefelé meghosszabbítva, a nyomtatható karakterek pedig a hozzájuk tartozó "
+"vonalak alatt lesznek megjelenítve. Ez alapértelmezetten engedélyezve van az "
+"EAN-13 vonalkódoknál."
 
 #: ../../content/index.rst:84
 msgid "Font: Font to use for the barcode caption."
-msgstr ""
+msgstr "Font: a vonalkód feliratához használandó betűkészlet."
 
 #: ../../content/index.rst:85
 msgid "FontSize: Font size to use for the barcode caption."
-msgstr ""
+msgstr "FontSize: a vonalkód feliratához használandó betűméret."
 
 #: ../../content/index.rst:88
 msgid "Footer"
-msgstr ""
+msgstr "Lábléc"
 
 #: ../../content/index.rst:89
 msgid ""
@@ -239,6 +286,10 @@ msgid ""
 "The key 'FooterText' is capable of interpreting Template::Toolkit syntax "
 "(compare description of the Text section)."
 msgstr ""
+"Az `ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting` "
+"rendszerbeállítási lehetőségben egy lábléc helye, megjelenése és tartalma "
+"adható meg. A „FooterText” kulcs képes a Template::Toolkit szintaxisának "
+"értelmezésére (hasonlítsa össze a „Szöveg” szakasz leírásával)."
 
 #: ../../content/index.rst:92
 msgid "Configuration Reference"
@@ -250,13 +301,15 @@ msgstr "Frontend::Agent::ITSMConfigItem::MenuModule"
 
 #: ../../content/index.rst:98
 msgid "ITSMConfigItem::Frontend::MenuModule###450-LabelPrint"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::MenuModule###450-LabelPrint"
 
 #: ../../content/index.rst:99
 msgid ""
 "Shows a link in the menu to print a label of the configuration item in "
 "the zoom view of the agent interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben egy konfigurációelem címkéjének "
+"nyomtatásához az ügyintézői felület nagyítási nézetében."
 
 #: ../../content/index.rst:102
 msgid "Frontend::Agent::ITSMConfigItem::Permission"
@@ -264,7 +317,7 @@ msgstr "Frontend::Agent::ITSMConfigItem::Permission"
 
 #: ../../content/index.rst:105
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Permission"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Permission"
 
 #: ../../content/index.rst:106
 msgid ""
@@ -280,7 +333,7 @@ msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/index.rst:112
 msgid "Frontend::Module###AgentITSMConfigItemLabelPrint"
-msgstr ""
+msgstr "Frontend::Module###AgentITSMConfigItemLabelPrint"
 
 #: ../../content/index.rst:113
 msgid "Frontend module registration for the agent interface."
@@ -293,6 +346,8 @@ msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 #: ../../content/index.rst:119
 msgid "Frontend::Navigation###AgentITSMConfigItemLabelPrint###003-AgentITSMConfigItemLabelPrint"
 msgstr ""
+"Frontend::Navigation###AgentITSMConfigItemLabelPrint###003-"
+"AgentITSMConfigItemLabelPrint"
 
 #: ../../content/index.rst:120
 msgid "Main menu item registration."
@@ -300,11 +355,12 @@ msgstr "Főmenü elem regisztráció."
 
 #: ../../content/index.rst:123
 msgid "Frontend::Agent::View::AgentITSMConfigItemLabelPrint"
-msgstr ""
+msgstr "Frontend::Agent::View::AgentITSMConfigItemLabelPrint"
 
 #: ../../content/index.rst:126
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting"
 msgstr ""
+"ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###BarcodeSetting"
 
 #: ../../content/index.rst:127
 msgid ""
@@ -324,33 +380,35 @@ msgstr ""
 
 #: ../../content/index.rst:139
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###TableSetting"
 
 #: ../../content/index.rst:140
 msgid "Used table settings for the label."
-msgstr ""
+msgstr "A címkéhez használt táblázatbeállítások."
 
 #: ../../content/index.rst:143
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###LogoSetting"
 
 #: ../../content/index.rst:144
 msgid ""
 "Used logo settings for the label. The best size is 142 x 187 px. Please "
 "use px here."
 msgstr ""
+"A címkéhez használt logóbeállítások. A legjobb méret a 142×187 képpont. Itt "
+"képpontot használjon."
 
 #: ../../content/index.rst:147
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###HLineSetting"
 
 #: ../../content/index.rst:148
 msgid "Used settings for the horizontal line."
-msgstr ""
+msgstr "A vízszintes vonalhoz használt beállítások."
 
 #: ../../content/index.rst:151
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###Text"
 
 #: ../../content/index.rst:152
 msgid ""
@@ -358,20 +416,26 @@ msgid ""
 " Template::Toolkit is supported, thus config item data can be used like "
 "\"Number: [% Data.Number %]\"."
 msgstr ""
+"Több sor meghatározása (soronként egy bejegyzés), amelyek címketartalomként "
+"lesznek kinyomtatva. A Template::Toolkit támogatott, így a konfigurációelem "
+"adatai ehhez hasonlóan is használhatók: „Szám: [% Data.Number %]”."
 
 #: ../../content/index.rst:155
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###FooterSetting"
 
 #: ../../content/index.rst:156
 msgid ""
 "Used footer settings for the label. Template::Toolkit is supported, thus "
 "config item data can be used like \"Number: [% Data.Number %]\"."
 msgstr ""
+"A címkéhez használt láblécbeállítások. A Template::Toolkit támogatott, így a "
+"konfigurációelem adatai ehhez hasonlóan is használhatók: „Szám: [% "
+"Data.Number %]”."
 
 #: ../../content/index.rst:159
 msgid "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###PageSetting"
-msgstr ""
+msgstr "ITSMConfigItem::Frontend::AgentITSMConfigItemLabelPrint###PageSetting"
 
 #: ../../content/index.rst:160
 msgid ""
